@@ -3,11 +3,14 @@
 <style>
  #main {
    background-color: currentcolor;
-   margin-left: 250px;
-   margin-right: 250px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+
+  
  }
  
-  #big {
+  #tribute-info {
     background-color: #474f43;
   }
 
@@ -22,8 +25,14 @@
   #img-div {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
     
   }
+  img {
+      width: 100%;
+      max-width: 320px;
+    }
 
   #mind {
     font-family: helvetica;
@@ -39,7 +48,7 @@
     text-align: center;
     margin-left: 125px;
     margin-right: 125px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
     border: 4px solid;
     border-radius: 10px;
     border-color: rgb(185, 190, 192);
@@ -113,18 +122,21 @@
 }
 </style>
 
-
-<main id="main">
+<body>
+<div id="main">
   <br>
   <h1 id="title">The 40 Percent Rule</h1>
 
   <br>
 
-  <div id="img-div"><img id="img" id="can't hurt me book cover" src="https://m.media-amazon.com/images/I/41kWOyfqI9L.jpg" alt=""></div>
+  <div id="img-div">
+    <img id="img" src="https://m.media-amazon.com/images/I/41kWOyfqI9L.jpg" alt="">
+    <p id="img-caption">can't hurt me book cover</p>
+  </div>
 
   <br>
 
-  <body id="big">
+  <div id="tribute-info">
 
     <p id="mind">You cannot hide from your mind. You must face it head on.</p>
 
@@ -165,7 +177,7 @@
 
     <br>
 
-  </body>
+  </div>
 
   <br>
 
@@ -178,6 +190,7 @@
 
   <br>
 
-</main>
+</div>
+</body>
 
 </html>
